@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bagraund"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/dobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать!"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vhod"/>
+
+    <TextView
+        android:id="@+id/dhodpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполните вход"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="#EEFFF8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobro"/>
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="или зарегистрируйтесь"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="#EEFFF8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dhodpro"/>
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#818181"
+        android:paddingStart="25dp"
+        android:layout_marginTop="40dp"
+        android:hint="Введите вашу почту"
+        android:background="@drawable/rounder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg" />
+
+    <EditText
+        android:id="@+id/editpas"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#818181"
+        android:paddingStart="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:background="@drawable/rounder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editemail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/g"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpas"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="10dp"
+        android:text="Вход"
+        android:backgroundTint="#808182"/>
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="забыл праоль?"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danchik"
+        android:textColor="#F1A32F"
+        android:textSize="18sp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/y"
+        android:layout_marginBottom="58dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
